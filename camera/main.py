@@ -1,7 +1,6 @@
 import display
 import touch
 import camera
-import time
 
 camera_activated = False
 zoom_activated = 1
@@ -13,7 +12,6 @@ def activate_camera(button):
         camera.overlay(camera_activated)
     else:
         camera_activated = True
-        time.sleep(2)
         camera.overlay(camera_activated)
         
 def zoom_camera(button):
