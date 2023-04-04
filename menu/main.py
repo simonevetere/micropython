@@ -29,5 +29,4 @@ def onclick(button):
     if idx > maxlen - 1:
       idx = 0
 
-print("app=menu&server=get_app&callback=display_text")
 touch.callback(touch.BOTH, onclick)
