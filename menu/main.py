@@ -22,11 +22,11 @@ def onclick(button):
   print('app=menu&server=get_app&callback=display_text')
   
   if button == "B":
-    maxlen = len(all_app)
-    if idx > maxlen - 1:
-    	idx = 0
-    print('app=' + all_app[idx] + '&server=&callback=display_text')
+    print('app=' + all_app[idx] + '&server=&callback=')
   if button == "A":
     idx = idx + 1
+    maxlen = len(all_app)
+    if idx > maxlen - 1:
+      idx = 0
 
 touch.callback(touch.BOTH, onclick)
