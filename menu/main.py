@@ -1,4 +1,5 @@
 import display
+import touch
 
 def display_text(text):
     display.text(text,150,175,0xffffff)
