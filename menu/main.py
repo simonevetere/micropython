@@ -29,4 +29,7 @@ def onclick(button):
     if idx > maxlen - 1:
       idx = 0
 
+
+display.text("press Right to show/,move options",150,50,0xffffff)
+display.text("then press Left to choose option",150,50,0xffffff)
 touch.callback(touch.BOTH, onclick)
