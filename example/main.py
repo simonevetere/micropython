@@ -1,9 +1,9 @@
 import display
 import touch
 
-def display_text(in_app):
+def display_text(text):
   
-  display.text(app,150,start,0xffffff)
+  display.text(text,150,50,0xffffff)
   
   display.show()
 
