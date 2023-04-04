@@ -2,8 +2,11 @@ import display
 import touch
 
 def display_text(text):
-    display.text(text,150,175,0xffffff)
-    display.show();
+	start = 50
+	for app in text:
+	    display.text(text,150,start,0xffffff)
+		start = start + 50   
+	display.show()
 
 
 def onclick(button):
