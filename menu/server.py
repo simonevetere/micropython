@@ -1,7 +1,7 @@
 import os
 
 def get_app():
-	path = "/micropython/"
+	path = "micropython/"
 	dir_list = os.listdir(path)
 
-	return str(display_text)
+	return str(dir_list)
