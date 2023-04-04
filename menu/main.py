@@ -19,14 +19,15 @@ def display_text(in_app):
 
 def onclick(button):
   global idx
-  print('app=menu&server=get_app&callback=display_text')
   
   if button == "B":
     print('app=' + all_app[idx] + '&server=&callback=')
   if button == "A":
+    print('app=menu&server=get_app&callback=display_text')
     idx = idx + 1
     maxlen = len(all_app)
     if idx > maxlen - 1:
       idx = 0
 
+print('app=menu&server=get_app&callback=display_text')
 touch.callback(touch.BOTH, onclick)
