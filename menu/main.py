@@ -30,6 +30,7 @@ def onclick(button):
       idx = 0
 
 
-display.text("press Right to show/,move options",150,50,0xffffff)
-display.text("then press Left to choose option",150,50,0xffffff)
+display.text("press R to show/move",150,50,0xffffff)
+display.text("then press L to choose",150,150,0xffffff)
+display.show()
 touch.callback(touch.BOTH, onclick)
