@@ -10,4 +10,4 @@ def get_random_json():
     # Print the response
     response_json = response.json()
 
-    return response_json
+    return str(response_json)[0:20]
