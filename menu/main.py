@@ -3,9 +3,11 @@ import touch
 
 def display_text(text):
 	start = 50
+
 	for app in text:
-	    display.text(text,150,start,0xffffff)
+		display.text(app,150,start,0xffffff)
 		start = start + 50   
+	
 	display.show()
 
 
