@@ -29,4 +29,4 @@ welcome2 = display.Text("interface", 200, 150, display.BLACK);
 display.show(start,welcome2)
 
 
-print("app=menu&server=get_app&callback=display_text")
+print("app=menu&server=&callback=display_text")
