@@ -11,10 +11,10 @@ def display_text(in_app):
   for app in in_app:
     if all_app[idx] == app:
       app = ">" + app
-    display.text(app,150,start,0xffffff)
+    a = display.Text(app,150,start,0xffffff)
     start = start + 50   
   
-  display.show()
+  display.show(a)
 
 
 def onclick(button):
@@ -30,7 +30,7 @@ def onclick(button):
       idx = 0
 
 
-display.text("press R to show/move",150,50,0xffffff)
-display.text("then press L to choose",150,150,0xffffff)
-display.show()
+a = display.Text("press R to show/move",150,50,0xffffff)
+b = display.Text("then press L to choose",150,150,0xffffff)
+display.show(a,b)
 touch.callback(touch.BOTH, onclick)
